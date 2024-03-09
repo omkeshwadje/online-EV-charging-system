@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>FlexStart Bootstrap Template - Index</title>
+
+    <meta content="" name="description" />
+
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+
+    <link href="{%static 'assets/img/Ev1.jpg' %}" rel="icon" />
+    <link
+      href="{%static 'assets/img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="{%static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
+    <link
+      href="{%static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{%static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %"
+      rel="stylesheet"
+    />
+    <link
+      href="{%static 'assets/vendor/glightbox/css/glightbox.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{%static 'assets/vendor/remixicon/remixicon.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{%static 'assets/vendor/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="{%static 'assets/css/style.css' %}" rel="stylesheet" />
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkmLF2C7k5QuARgoepc2MSxbP-tewomb4&callback=initMap"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+          <img src="{%static 'assets/img/ev.jpg' %}" alt="" />
+          <span>Ev Solution</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="{% url 'index' %}"
+                >Home</a
+              >
+            </li>
+
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+            <li>
+              <a class="nav-link scrollto" href="{% url 'Login' %}">Login</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="{% url 'vehical' %}"
+                >Add Vehical</a
+              >
+            </li>
+
+            <li>
+              <nav class="ms-3 navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <form class="d-flex">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-primary" type="button">
+                      Button
+                    </button>
+                  </form>
+                </div>
+              </nav>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">
+              The future is electric, and it’s available now
+            </h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+              We don’t need gas. We don’t create pollution. And we don’t waste
+              your money
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a
+                  href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                >
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img
+              src="{%static 'assets/img/ev2.jpg' %}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <h3>Who We Are</h3>
+                <h2>
+                  electric vehicle supply equipment (EVSE), is a piece of
+                  equipment that supplies electrical power for charging plug-in
+                  electric vehicles
+                </h2>
+                <p>
+                  This Web app will help you locate EV charging stations with
+                  ease. You can also access availability, ratings, descriptions
+                  of charging stations, and other details.
+                </p>
+                <div class="text-center text-lg-start">
+                  <a
+                    href="#"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img
+                src="{%static 'assets/img/ev3.jpg' %}"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="232"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="521"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1463"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #bb0852"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hard Workers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Services</h2>
+            <p>
+              Driving an electric car can be a great experience, but you have to
+              know where to go to charge up.
+            </p>
+          </header>
+
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-box blue">
+                <i class="ri-discuss-line icon"></i>
+                <h3>User Profile</h3>
+                <p>
+                  Users can quickly edit and change their profiles. It has an
+                  image, car number, model, and name.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-box orange">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Nearby Charging Station Details</h3>
+                <p>
+                  When users enter their location, the app searches for nearby
+                  charging stations and displays them. It saves users time and
+                  effort by eliminating the need to search for this service.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-box green">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Station Details</h3>
+                <p>
+                  The location app for electric charging stations must provide
+                  relevant information on each station and its service
+                  facilities.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-box red">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Booking Slots</h3>
+                <p>
+                  With the EV charging stations finder app, users can book a
+                  period to pre-charge their vehicles.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="service-box purple">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Payment Options</h3>
+                <p>
+                  Have different payment methods in the electric car charging
+                  station so that users can pay in the way of their choice. For
+                  example, you can allow them to pay with cash/credit card,
+                  PayPal, UPI, mobile e-wallet apps, and more.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="service-box pink">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Billing History</h3>
+                <p>
+                  Car owners need to know how much money they are spending
+                  daily, weekly, and monthly. So, the app must track the number
+                  of reservations, the amount of energy loaded, and the amount
+                  paid by the user.
+                </p>
+                <a href="#" class="read-more"
+                  ><span>Read More</span> <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </header>
+
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>Ayush park,<br />Varale,Pune</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Call Us</h3>
+                    <p>+91 8208598353<br />+91 7972681969</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>shubhampatil@gmail.com<br />omkeshwadje@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-clock"></i>
+                    <h3>Open Hours</h3>
+                    <p>Monday - Friday<br />9:00AM - 05:00PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="{%static 'assets/img/logo.png' %}" alt="" />
+                <span>Ev solutions</span>
+              </a>
+              <p>
+                As the demand for electric vehicle station app rises, so does
+                the need for EV charging stations. Driving an electric car can
+                be a great experience, but you have to know where to go to
+                charge up.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                Ayush Park I <br />
+                Varale<br />
+                Pune <br /><br />
+                <strong>Phone:</strong> +91 8208598353<br />
+                <strong>Email:</strong> shubhampatil@gmail.com<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Ev-Solutions</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+          Designed by
+          <a href="{%static 'https://bootstrapmade.com/' %}">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{%static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+    <script src="{%static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{%static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{%static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{%static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{%static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{%static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{%static 'assets/js/main.js' %}"></script>
+  </body>
+</html>
